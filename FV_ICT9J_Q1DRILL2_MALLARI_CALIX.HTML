@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q1 Drill 2</title>
+    <style>
+        body {
+            background-color: #1a0b0d;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            text-align: center;
+        }
+        h1 {
+            background-color: #5c121d;
+            padding: 10px;
+            margin: 20px auto;
+            max-width: 600px;
+            border-radius: 10px;
+        }
+        section {
+            background-color: #30151a;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 600px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px black;
+        }
+        img {
+            width: 180px;
+            display: block;
+            margin: auto;
+            border-radius: 8px;
+        }
+        select, textarea, input[type="number"] {
+            padding: 7px;
+        }
+        input[type="submit"] {
+            background-color: #681521;
+            color: white;
+            padding: 8px;
+        }
+        a {
+            color: #e06a78;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>RATE A MOVIE</h1>
+        <p>Best movie for me rn</p>
+    </header>
+    <section>
+        <form>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9SQ4QvSSzI_TpccyNq7ZQ-gVVRKOqGR-5uKVsYGMu2fAIiUC5UarHeDrB&s=10" alt="Obsession">
+            <br>
+            <label for="movies">Select a Movie</label>
+            <select id="movies">
+                <option>Obsession</option>
+                <option>Spiderman: Brand New Day</option>
+                <option>The Odyssey</option>
+            </select><br><br>
+            <label>Genre/s:</label><br>
+            <input type="checkbox" id="horror"><label for="horror"> Horror</label>
+            <input type="checkbox" id="romance"><label for="romance"> Romance</label>
+            <input type="checkbox" id="thriller"><label for="thriller"> Thriller</label><br><br>
+            <label for="rating">Rating:</label>
+            <input type="number" id="rating" min="1" max="10"><br><br>
+            <label>RATE:</label><br>
+            <input type="radio" name="rate">⭐ <input type="radio" name="rate">⭐⭐
+            <input type="radio" name="rate">⭐⭐⭐ <input type="radio" name="rate">⭐⭐⭐⭐
+            <input type="radio" name="rate">⭐⭐⭐⭐⭐<br><br>
+            <textarea rows="4" cols="50" placeholder="Write your review..."></textarea><br><br>
+            <input type="submit" value="Submit Review"><br><br>
+            Movie Review Tips: <a href="https://learnaboutfilm.com" target="_blank">Click here</a>
+        </form>
+    </section>
+</body>
+</html>
